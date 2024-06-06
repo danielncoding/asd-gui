@@ -1,0 +1,29 @@
+h1{
+    color:white;
+    margin-left: 10px;
+}
+#system-and-pkg-type{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+}
+#bu-and-project-name{
+    display: flex;
+    flex-direction: row;
+    gap:100px;   
+}
+p{
+    color: white;
+    font-size: 20px;
+}
+input{
+    width: 500px;
+}
+#menu-options-container{
+    width: 1550px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    justify-content: center;
+    align-content: center;
+}
