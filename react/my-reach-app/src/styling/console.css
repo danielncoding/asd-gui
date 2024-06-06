@@ -12,18 +12,14 @@
     border-radius: 5px;
     font-size: 20px;
 }
-
-
 #console::-webkit-scrollbar {
     width: 6px;
     height: 12px;
 }
-
 #console::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
-
 #console::-webkit-scrollbar-track {
     background: rgb(65, 65, 65);
     border: 3px solid black;

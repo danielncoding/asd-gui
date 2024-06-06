@@ -1,29 +1,100 @@
 h1{
     color:white;
     margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-#system-and-pkg-type{
-    display: flex;
-    flex-direction: row;
-    gap:100px;
+select{
+    width:510px;
+    font-size: 16px;
+    border-radius: 5px;
 }
-#bu-and-project-name{
-    display: flex;
-    flex-direction: row;
-    gap:100px;   
-}
-p{
+label{
     color: white;
     font-size: 20px;
+
 }
-input{
-    width: 500px;
-}
+
+
 #menu-options-container{
     width: 1550px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    justify-content: center;
-    align-content: center;
+    margin-top: 0px;
+}
+#left-col{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 200px;
+    height: 265px;
+}
+#right-col{
+    display: flex;
+    flex-direction: column;
+    height: 265px;
+}
+
+
+#system-p, #package-type-p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+#bu-p, #description-p, #project-name-p, #remote-url-p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#project-name-input, #description-input, #remote-url{
+    width: 500px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#third-party-checkbox{
+    margin-top:20px;
+    width: 100px;
+}
+
+
+#name-templates{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+}
+#virtual-name-templates, #local-name-templates, #remote-name-templates{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#virtual-template-button, #local-template-button, #remote-template-button{
+    width:100px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 15px;
+}
+#virtual-name-p, #local-name-p, #remote-name-p{
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    width: 120px;
+}
+#virtual-name-template-p, #local-name-template-p, #remote-name-template-p{
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+
+#create-repository-button{
+    width:100px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+#create-repository-button:hover{
+    background-color: rgb(100, 200, 100)
 }
