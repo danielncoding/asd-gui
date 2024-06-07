@@ -1,0 +1,59 @@
+h1{
+    color:white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+label{
+    color: white;
+    font-size: 20px;
+
+}
+
+
+#menu-options-container{
+    width: 1550px;
+    margin-top: 0px;
+}
+#left-col{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 200px;
+    height: 265px;
+}
+#right-col{
+    display: flex;
+    flex-direction: column;
+    height: 265px;
+}
+
+
+
+#description-p, #remote-url-p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#description-input, #remote-url{
+    width: 500px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#third-party-checkbox{
+    margin-top:20px;
+    width: 100px;
+}
+
+
+#create-repository-button{
+    width:100px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+#create-repository-button:hover{
+    background-color: rgb(100, 200, 100)
+}

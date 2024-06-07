@@ -1,0 +1,22 @@
+#package-type-dropdown, #bu-dropdown, #system-dropdown{
+    width:510px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#system-p, #package-type-p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+#bu-p, #project-name-p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#project-name-input{
+    width: 500px;
+    font-size: 16px;
+    border-radius: 5px;
+}

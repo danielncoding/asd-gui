@@ -1,7 +1,7 @@
 import Console from './console.jsx'
 import Menu from './menu.jsx'
 import MenuSettings from './menuSettings.jsx'
-import MenuCreateRepository from './menuCreateRepository.jsx'
+import MenuCreateRepository from './createRepository/menuCreateRepository.jsx'
 import '../styling/outline.css'
 
 function Outline(){

@@ -1,5 +1,5 @@
 import '../styling/menuSettings.css'
-import MenuCreateRepository from './menuCreateRepository.jsx'
+import MenuCreateRepository from './createRepository/menuCreateRepository.jsx'
 
 function MenuSettings(){
 
