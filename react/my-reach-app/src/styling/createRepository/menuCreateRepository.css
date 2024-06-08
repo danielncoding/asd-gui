@@ -4,14 +4,10 @@ h1{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-label{
-    color: white;
-    font-size: 20px;
-
-}
 
 
-#menu-options-container{
+
+#create-repository-options-container{
     width: 1550px;
     margin-top: 0px;
 }
@@ -40,9 +36,8 @@ label{
     font-size: 16px;
     border-radius: 5px;
 }
-#third-party-checkbox{
-    margin-top:20px;
-    width: 100px;
+#remote-url-div{
+    opacity: 0;
 }
 
 

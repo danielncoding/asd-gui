@@ -1,3 +1,5 @@
+import {useState} from 'react'
+
 import Console from './console.jsx'
 import Menu from './menu.jsx'
 import MenuSettings from './menuSettings.jsx'
@@ -6,15 +8,19 @@ import '../styling/outline.css'
 
 function Outline(){
 
+    const [visibleMenu, setVisibleMenu] = useState("create-repository");
+    const [consoleText, setConsoleText] = useState("test"); 
+    //setConsoleText a react tutorial végén volt hogy több child-al beljebb meghívta
+
     return(
         <>  
             <div id="mainDiv">
                 <div id="nonConsoleDiv">
-                    <Menu></Menu>
-                    <MenuSettings></MenuSettings>
+                    <Menu setVisibleMenu={setVisibleMenu}></Menu>
+                    <MenuSettings visibleMenu={visibleMenu}></MenuSettings>
                 </div>
                 <div>
-                    <Console></Console>
+                    <Console consoleText={consoleText}></Console>
                 </div>
             </div>
         </>

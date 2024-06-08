@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: left;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 #virtual-name-templates, #local-name-templates, #remote-name-templates{
     display: flex;
