@@ -1,7 +1,7 @@
 import '../../styling/common/common.css'
 
 
-const BusinessUnit = ({setBu}) => {
+const BusinessUnit = ({setBu, buDropdownIndex}) => {
     
     const handleChange = (event) => {
         setBu(event.target.value)
@@ -10,8 +10,8 @@ const BusinessUnit = ({setBu}) => {
     return(
         <>
             <div>
-                <p id="bu-p">Business Unit</p>
-                <select id="bu-dropdown" name="options" onChange={handleChange}>
+                <p class="bu-p">Business Unit</p>
+                <select id={buDropdownIndex} class="bu-dropdown" name="options" onChange={handleChange}>
                     <option value="" disabled selected>Select an option</option>
                     <option value="te_me">te_me</option>
                     <option value="di_ct">di_ct</option>

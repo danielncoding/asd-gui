@@ -8,7 +8,7 @@ const Menu = ({setVisibleMenu}) => {
 
     return(
         <>  
-            <div id="menu-div">
+            <div class="menu-div">
                 <button id="create-repository" onClick={handleChange}>Create Repository</button><br/>
                 <button id="create-docker-repository" onClick={handleChange}>Create Docker Repository</button><br/>
                 <button id="create-permission" onClick={handleChange}>Create Permission</button><br/>

@@ -10,7 +10,7 @@ button:hover{
 }
 
 
-#menu-div{
+.menu-div{
     height: 590px;
     float: left;
     background-color: rgb(109, 109, 109);

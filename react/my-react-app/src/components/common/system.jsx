@@ -1,6 +1,6 @@
 import '../../styling/common/common.css'
 
-const System = ({setSystem}) => {
+const System = ({setSystem, systemDropdownIndex}) => {
     const handleChange = (event) => {
         setSystem(event.target.value)
     };
@@ -8,8 +8,8 @@ const System = ({setSystem}) => {
     return(
         <>
             <div>
-                <p id="system-p">System</p>
-                <select id="system-dropdown" name="options" onChange={handleChange}>
+                <p class="system-p">System</p>
+                <select id={systemDropdownIndex} class="system-dropdown" name="options" onChange={handleChange}>
                     <option value="" disabled selected>Select an option</option>
                     <option value="for">for</option>
                     <option value="blr">blr</option>

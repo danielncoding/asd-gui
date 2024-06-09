@@ -3,19 +3,20 @@ import {useState} from 'react'
 import Console from './console.jsx'
 import Menu from './menu.jsx'
 import MenuSettings from './menuSettings.jsx'
-import MenuCreateRepository from './createRepository/menuCreateRepository.jsx'
 import '../styling/outline.css'
+
+//TODO Left and right columns are not aligned.
 
 function Outline(){
 
     const [visibleMenu, setVisibleMenu] = useState("create-repository");
     const [consoleText, setConsoleText] = useState("test"); 
-    //setConsoleText a react tutorial végén volt hogy több child-al beljebb meghívta
+    //setConsoleText a react tutorial végén volt hogy több child-al beljebb meghívta ?useRef?
 
     return(
         <>  
-            <div id="mainDiv">
-                <div id="nonConsoleDiv">
+            <div class="mainDiv">
+                <div class="nonConsoleDiv">
                     <Menu setVisibleMenu={setVisibleMenu}></Menu>
                     <MenuSettings visibleMenu={visibleMenu}></MenuSettings>
                 </div>

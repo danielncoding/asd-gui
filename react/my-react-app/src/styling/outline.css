@@ -5,11 +5,11 @@ body{
 html{
     height: 100%;
 }
-#mainDiv{
+.mainDiv{
     display:flex;
     flex-direction: column;
 }
-#nonConsoleDiv{
+.nonConsoleDiv{
     display:flex;
     flex-direction: row;
 }

@@ -1,6 +1,6 @@
 import '../../styling/common/common.css'
 
-const PackageType = ({setPackageType}) => {
+const PackageType = ({setPackageType, packageTypeDropdownIndex}) => {
 
     const handleChange = (event) => {
         setPackageType(event.target.value)
@@ -9,8 +9,8 @@ const PackageType = ({setPackageType}) => {
     return(
         <>
             <div>
-                <p id="package-type-p">Package Type</p>
-                <select id="package-type-dropdown" name="options" onChange={handleChange}>
+                <p class="package-type-p">Package Type</p>
+                <select id={packageTypeDropdownIndex} class="package-type-dropdown" name="options" onChange={handleChange}>
                     <option value="" disabled selected>Select an option</option>
                     <option value="generic">generic</option>
                     <option value="nuget">nuget</option>

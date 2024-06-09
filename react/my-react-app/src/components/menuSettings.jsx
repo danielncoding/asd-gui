@@ -9,7 +9,7 @@ const MenuSettings = ({visibleMenu}) => {
 
     return(
         <>
-            <div id="menu-settings-div">
+            <div class="menu-settings-div">
                 <div id="menu-create-repository-div" style={{ opacity: visibleMenu==="create-repository" ? 100 : 0 }}>
                     <MenuCreateRepository></MenuCreateRepository>
                 </div>

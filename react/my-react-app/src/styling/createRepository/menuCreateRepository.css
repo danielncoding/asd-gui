@@ -11,17 +11,19 @@ h1{
     width: 1550px;
     margin-top: 0px;
 }
-#left-col{
+.left-col{
     display: flex;
     flex-direction: column;
     float: left;
     margin-right: 200px;
     height: 265px;
+    max-height: 265px;
 }
-#right-col{
+.right-col{
     display: flex;
     flex-direction: column;
     height: 265px;
+    max-height: 265px;
 }
 
 
