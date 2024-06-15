@@ -6,6 +6,7 @@ import MenuSettings from './menuSettings.jsx'
 import '../styling/outline.css'
 
 //TODO Left and right columns are not aligned.
+//TODO Left and right column rename might be needed - add docker / permission somewhere to identify better
 
 function Outline(){
 

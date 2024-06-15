@@ -1,10 +1,12 @@
-const UserAndGroupItem = ({key, name, title}) => {
+import {useEffect} from 'react'
+
+const UserAndGroupItem = ({k, name, title, removeUserOrGroup}) => {
     
-    const itemNameId = title + "-item-name-" + key
-    const itemPermissionDropdownId = title + "-permission-dropdown-" + key
-    const itemDeleteButtonId = title + "-delete-button-" + key
+    const itemNameId = title + "-item-name-" + k
+    const itemPermissionDropdownId = title + "-permission-dropdown-" + k
+    const itemDeleteButtonId = title + "-delete-button-" + k
     
-    //TODO fix shit here
+
 
     return(
         <>
@@ -18,7 +20,7 @@ const UserAndGroupItem = ({key, name, title}) => {
                         <option value="delete/overwrite">Delete/Overwrite</option>
                         <option value="manage">Manage</option>
                 </select>
-                <button id={itemDeleteButtonId} class="item-delete-button">X</button>
+                <button id={itemDeleteButtonId} onClick={() => removeUserOrGroup(name)} class="item-delete-button">X</button>
             </div>
         </>
     );

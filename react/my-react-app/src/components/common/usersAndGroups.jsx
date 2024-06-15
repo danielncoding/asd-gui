@@ -1,4 +1,4 @@
-import {useState, useRef} from 'react'
+import {useState} from 'react'
 
 import UserAndGroupItem from '../common/userAndGroupItem.jsx';
 
@@ -9,11 +9,14 @@ const UsersAndGroups = ({title}) => {
     const [userOrGroupName, setUserOrGroupName] = useState("");
 
     const addUserOrGroup = () => {
-        if (userOrGroupName.trim()) {
+        if (userOrGroupName.trim() && !(userOrGroup.includes(userOrGroupName))) {
             setUserOrGroup([...userOrGroup, userOrGroupName]);
         }
     };
 
+    const removeUserOrGroup = (nameToRemove) => {
+        setUserOrGroup(userOrGroup.filter(name => name !== nameToRemove));
+    };
 
     return(
         <>
@@ -24,9 +27,12 @@ const UsersAndGroups = ({title}) => {
                     <button class="users-and-groups-add-button" onClick={addUserOrGroup}>+</button>
                 </div>
                 <div class="user-and-group-item-div" >
-                    {userOrGroup.map((name, index) => (
-                        <UserAndGroupItem key={index} name={name} title={title} />
-                    ))}
+                    {userOrGroup.map((name, index) => {
+                        return(
+                            <UserAndGroupItem k={index} name={name} title={title === "Users:" ? "user" : "group"} 
+                            removeUserOrGroup={removeUserOrGroup}/>
+                        )
+                    })}
                 </div>
             </div>
         </>

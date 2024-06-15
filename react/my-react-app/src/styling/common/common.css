@@ -65,13 +65,18 @@
     flex-direction: row;
     align-items: center;
 }
-.item-div::-webkit-scrollbar {
+.user-and-group-item-div::-webkit-scrollbar {
     width: 6px;
     height: 12px;
 }
-.item-div::-webkit-scrollbar-thumb {
+.user-and-group-item-div::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
+}
+.user-and-group-item-div::-webkit-scrollbar-track {
+    background: rgb(65, 65, 65);
+    border: 3px solid black;
+    width: 10px;
 }
 .item-name-p{
     color: white;

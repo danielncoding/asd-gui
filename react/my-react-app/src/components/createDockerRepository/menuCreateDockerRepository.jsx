@@ -27,7 +27,7 @@ function MenuCreateDockerRepository(){
                         <UsersAndGroups title={"Users:"}></UsersAndGroups>
                     </div>
                     <div class="right-col">
-                        <ProjectName setProjectName={setProjectName} projectNameDropdownIndex="create-docker-repository-project-name-input"></ProjectName>
+                        <ProjectName setProjectName={setProjectName} projectNameInput="create-docker-repository-project-name-input"></ProjectName>
                         <div>
                             <p id="specific-path-p">Specific path</p>
                             <input id="specific-path-input"></input>
