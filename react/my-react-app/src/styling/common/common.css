@@ -1,5 +1,5 @@
 #col-container{
-    margin-bottom:200px;
+    min-height: 570px;
 }
 
 
@@ -57,8 +57,14 @@
 }
 .user-and-group-item-div{
     overflow: auto;
-    height: 200px;
-
+    border-style: solid;
+    border-width: 2px;
+    border-color: 2px;
+    border-radius:5px;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 460px;
+    background-color: rgb(65, 65, 65);
 }
 .item-div{
     display: flex;
@@ -84,6 +90,7 @@
     margin-bottom: 10px;
     margin-top: 15px;
     width: 200px;
+    margin-left: 15px;
 }
 .item-permission-dropdown{
     width:150px;

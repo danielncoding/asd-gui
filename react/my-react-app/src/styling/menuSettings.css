@@ -2,11 +2,7 @@
     height: 650px;
     margin-left: 15px;
 }
-#menu-create-repository-div{
+#menu-create-repository-div, #menu-create-docker-repository-div, #menu-create-permission-div, #menu-permission-details-div{
     opacity: 100;
     position:absolute;
 } 
-#menu-create-docker-repository-div, #menu-create-permission-div, #menu-permission-details-div{
-    opacity: 0;
-    position:absolute;
-}

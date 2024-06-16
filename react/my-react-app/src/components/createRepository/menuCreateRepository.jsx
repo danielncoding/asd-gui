@@ -24,7 +24,7 @@ function MenuCreateRepository(){
                 <h1>Create Repository</h1>
             </div>
             <div id="create-repository-options-container">
-                <div>
+                <div id="col-containter">
                     <div class="left-col">
                         <System setSystem={setSystem} systemDropdownIndex="create-repository-system-dropdown"></System>
                         <BusinessUnit setBu={setBu} buDropdownIndex="create-repository-bu-dropdown"></BusinessUnit>

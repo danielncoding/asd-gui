@@ -1,9 +1,9 @@
-.permission-name-p{
+.permission-name-p, .check-token-p, .build-pattern-p{
     color: white;
     font-size: 20px;
     margin-bottom: 10px;
 }
-.permission-name-input{
+.permission-name-input, .check-token-input, .build-pattern-input{
     width: 500px;
     font-size: 16px;
     border-radius: 5px;
@@ -20,4 +20,39 @@
 }
 #check-token-checkbox{
     margin-right: 30px;
+}
+.permission-repos-div{
+    overflow: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: 2px;
+    border-radius:5px;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 460px;
+    background-color: rgb(65, 65, 65);
+}
+.permission-repos-div::-webkit-scrollbar {
+    width: 6px;
+    height: 12px;
+}
+.permission-repos-div::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+.permission-repos-div::-webkit-scrollbar-track {
+    background: rgb(65, 65, 65);
+    border: 3px solid black;
+    width: 10px;
+}
+#create-permission-button{
+    width:100px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+#create-permission-button:hover{
+    background-color: rgb(100, 200, 100)
 }

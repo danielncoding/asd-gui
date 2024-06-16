@@ -29,11 +29,22 @@ function MenuCreatePermission(){
                             <label id="build-pattern-label" for="build-pattern-checkbox">Set build include pattern</label>
                             <input id="build-pattern-checkbox" type="checkbox" ></input>                    
                         </div>
+                        <div>
+                            <p class="check-token-p">Access Token</p>
+                            <input class="check-token-input" ></input>
+                        </div>
                         
                         <UsersAndGroups title={"Users:"}></UsersAndGroups>
                     </div>
                     <div class="right-col">
+                        <div class="permission-repos-div" >
+                            
+                        </div>
 
+                        <div>
+                            <p class="build-pattern-p">Build Pattern</p>
+                            <input class="build-pattern-input" ></input>
+                        </div>
                         <UsersAndGroups title={"Groups:"}></UsersAndGroups>
                     </div>
 
